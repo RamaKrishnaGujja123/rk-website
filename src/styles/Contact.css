@@ -1,0 +1,118 @@
+/* Contact Section Styles */
+.contact-container {
+    background: linear-gradient(135deg, #f3f4f6, #e0f7fa); /* Modern gradient background */
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .contact-container h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Flexbox for the sections */
+  .contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .contact-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px; /* Slightly reduced width for better spacing */
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    border-radius: 50%; /* Circular image for modern look */
+  }
+  
+  .contact-card:hover img {
+    transform: scale(1.2); /* Slightly larger scale on hover */
+  }
+  
+  .contact-card h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Consistent with site color */
+    margin-bottom: 1rem;
+  }
+  
+  .contact-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5; /* Improved readability */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-container h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .contact-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

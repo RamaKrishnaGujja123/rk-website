@@ -1,0 +1,55 @@
+/* Download Resume Section Styles */
+.download-resume-container {
+  text-align: center;
+  margin: 2rem 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.download-resume-link {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding for the button */
+  border-radius: 12px; /* Rounded corners */
+  font-size: 1.1rem; /* Font size */
+  font-weight: 600; /* Font weight */
+  text-decoration: none; /* Remove underline */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.download-resume-link:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f); /* Darker gradient on hover */
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.download-resume-link:active {
+  background: linear-gradient(135deg, #003f7f, #002a5e); /* Even darker gradient on active */
+  transform: translateY(-2px); /* Slight lift on active */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Consistent shadow on active */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .download-resume-link {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .download-resume-link {
+    padding: 8px 16px; /* Further adjust padding for smallest screens */
+    font-size: 0.9rem; /* Further adjust font size for smallest screens */
+  }
+}

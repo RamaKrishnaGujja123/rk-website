@@ -1,0 +1,175 @@
+/* Education Section Styles */
+#education {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f3f4f6, #e0f7fa); /* Modern gradient background */
+}
+
+#education h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out; /* Add animation to the heading */
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.education-item {
+  background: #ffffff; /* White background color */
+  border-radius: 15px; /* Slightly larger border radius for modern look */
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.education-item:hover {
+  transform: scale(1.05); /* Zoom in on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background: #f0f4f8; /* Slightly darker background on hover */
+}
+
+.education-icon {
+  color: #007bff; /* Cohesive blue color for the icon */
+  margin-right: 20px;
+  transition: color 0.3s;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.education-item:hover .education-icon {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.education-content {
+  flex: 1; /* Allow content to take up remaining space */
+  text-align: left;
+}
+
+.degree-info {
+  display: flex;
+  align-items: center;
+}
+
+.degree-info h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.education-item:hover .degree-info h3 {
+  color: #007bff; /* Blue color on hover */
+}
+
+.education-item p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+
+.education-item:hover p {
+  color: #333; /* Darker text color on hover */
+}
+
+.education-logo {
+  width: 120px; /* Adjusted width for better spacing */
+  height: 120px; /* Square logos */
+  margin-right: 20px; /* Space between the logo and the text */
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.education-item:hover .education-logo {
+  transform: scale(1.1); /* Slightly larger scale on hover */
+}
+
+/* AOS Animations */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  #education h2 {
+    font-size: 2rem;
+  }
+
+  .education-item {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .education-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .degree-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .education-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #education h2 {
+    font-size: 1.8rem;
+  }
+
+  .education-item {
+    padding: 15px;
+  }
+
+  .education-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .degree-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .education-item p {
+    font-size: 0.8rem;
+  }
+}

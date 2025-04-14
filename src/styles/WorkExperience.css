@@ -1,0 +1,127 @@
+/* Work Experience Section Styles */
+#experience {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
+  }
+  
+  #experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Container for experience entries */
+  .timeline {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+  }
+  
+  /* Experience Card */
+  .experience-item {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+  }
+  
+  .experience-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #f0f4f8;
+  }
+  
+  /* Dropdown Toggle */
+  .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .dropdown-arrow {
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  .dropdown-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .dropdown-content li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #experience h2 {
+      font-size: 2rem;
+    }
+  
+    .experience-item {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .experience-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .experience-content p,
+    .dropdown-content li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #experience h2 {
+      font-size: 1.8rem;
+    }
+  
+    .experience-item {
+      padding: 15px;
+    }
+  
+    .experience-content h3 {
+      font-size: 1.3rem;
+    }
+  
+    .experience-content p,
+    .dropdown-content li {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

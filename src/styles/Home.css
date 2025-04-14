@@ -1,0 +1,215 @@
+/* Global Container */
+.app-container {
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+  background: linear-gradient(135deg, #f3f4f6, #e0f7fa); /* Modern gradient background */
+}
+
+/* Main Content Styles */
+.content {
+  margin: 20px 0;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  color: #333; /* Consistent with site color */
+  line-height: 1.2; /* Consistent line height */
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out 0.5s;
+  animation-fill-mode: backwards;
+  color: #007bff; /* Consistent with site color */
+  line-height: 1.2; /* Consistent line height */
+}
+
+.content img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 10px 0;
+  animation: bounceIn 2s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.content img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Section Styles */
+.section {
+  margin: 0; /* Remove margin to blend sections */
+  padding: 20px;
+  background: linear-gradient(135deg, #f3f4f6, #e0f7fa); /* Consistent background for sections */
+  border-radius: 0; /* Remove border radius for seamless look */
+  box-shadow: none; /* Remove shadow for seamless look */
+  animation: fadeInUp 1s ease-in-out; /* Add fade-in-up animation */
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Subtle top border */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Subtle bottom border */
+}
+
+.about-me {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6; /* Better readability */
+  background: inherit; /* Inherit background for consistency */
+  animation: fadeInUp 1.5s ease-in-out; /* Add fade-in-up animation */
+}
+
+/* Contact Information Styles */
+.contact-info, .connect-section {
+  margin: 20px 0;
+}
+
+.contact-info h3, .contact-info p {
+  margin: 5px 0;
+  color: #333;
+  animation: fadeInUp 1s ease-in-out; /* Add fade-in-up animation */
+  line-height: 1.5; /* Consistent line height */
+}
+
+.contact-info .email {
+  background-color: #e0f7fa; /* Light blue background color */
+  color: #007bff; /* Blue text color */
+  padding: 5px 10px; /* Padding for better appearance */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Keep email highlight within text bounds */
+  transition: background-color 0.3s, transform 0.3s;
+  animation: fadeInUp 1s ease-in-out; /* Add fade-in-up animation */
+}
+
+.contact-info .email:hover {
+  background-color: #b2ebf2; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Connect Section Styles */
+.connect-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect-section h2 {
+  margin-bottom: 10px;
+  color: #007bff; /* Consistent with site color */
+  animation: fadeInUp 1s ease-in-out; /* Add fade-in-up animation */
+  line-height: 1.2; /* Consistent line height */
+}
+
+.connect-section p {
+  margin: 5px 0;
+  animation: fadeInUp 1s ease-in-out; /* Add fade-in-up animation */
+  line-height: 1.5; /* Consistent line height */
+}
+
+.connect-section .social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.connect-section .social-links a {
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out 0.1s; /* Smooth and delayed transformation */
+}
+
+.connect-section .social-links a img {
+  width: 30px;
+}
+
+.connect-section .social-links a img:hover {
+  transform: scale(1.1);
+}
+
+.download-resume-button {
+  background-color:  #007bff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: fadeInUp 1s ease-in-out; /* Add fade-in-up animation */
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Subtle gradient for button */
+}
+
+.download-resume-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-info .email {
+    font-size: 0.9rem;
+  }
+
+  .download-resume-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
