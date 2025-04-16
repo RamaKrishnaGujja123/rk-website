@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 // Importing logos
 import gsuLogo from '../assets/logos/govstlogo.jpg';
-import vecLogo from '../assets/logos/vaaglogo.jpg';
+import vecLogo from '../assets/logos/vaaglogo.png';
 
 const Education = () => {
   useEffect(() => {
