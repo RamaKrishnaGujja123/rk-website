@@ -34,9 +34,9 @@ const Education = () => {
           <div className="education-content">
             <div className="degree-info">
               <FaGraduationCap size={30} className="education-icon" />
-              <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+              <h3>Bachelor of Technology </h3>
             </div>
-            <p>Vaagdevi Engineering College, Warangal, India</p>
+            <p>JNTU, Hyderabad, India</p>
             <p>Percentage: 71%</p>
           </div>
         </div>
